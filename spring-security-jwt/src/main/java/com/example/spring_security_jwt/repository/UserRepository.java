@@ -6,4 +6,6 @@ import com.example.spring_security_jwt.entity.UserEntity;
 
 public interface UserRepository extends JpaRepository<UserEntity, Integer>{
 
+    Boolean existsByUsername(String username);
+
 }
